@@ -39,15 +39,15 @@ public class Viagem {
 	}
 
 	public int getDuracaoHoras() {
-		return new CalculaHoras(this).calcular();
+		return new CalculadoraViagem(this).calcularHoras();
 	}
 
 	public int getDuracaoMinutos() {
-		return new CalculaMinutos(this).calcular();
+		return new CalculadoraViagem(this).calcularMinutos();
 	}
 
 	public int getDuracaoTotalMinutos() {
-		return new CalculaMinutos(this).calcularTotal();
+		return new CalculadoraViagem(this).calcularTotal();
 	}
 
 }
